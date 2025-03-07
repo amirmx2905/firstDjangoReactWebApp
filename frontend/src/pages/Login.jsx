@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
+import Form from "../components/Form";
 
 function Login() {
   return (
-    <div className="container mx-auto p-4 text-center">
-      <h1 className="text-3xl font-bold">Iniciar Sesión</h1>
-      <p>Página de inicio de sesión</p>
+    <div className="flex items-center justify-center h-screen">
+      <Form route="api/token/" method="login" />
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;
