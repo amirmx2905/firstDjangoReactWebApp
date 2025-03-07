@@ -11,6 +11,11 @@ function LogOut() {
   return <Navigate to="/login" />
 }
 
+function RegisterAndLogout () {
+  localStorage.clear()
+  return <Register/>
+}
+
 function App() {
   return (
     <BrowserRouter>
@@ -24,8 +29,8 @@ function App() {
           }
         />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<LogOut />} />
+        <Route path="/register" element={<RegisterAndLogout />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

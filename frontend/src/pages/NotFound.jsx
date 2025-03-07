@@ -2,9 +2,9 @@ import React from 'react'
 
 function NotFound() {
   return (
-    <div className="container mx-auto p-4 text-center">
-      <h1 className="text-3xl font-bold">404 - Página no encontrada</h1>
-      <p>Lo sentimos, la página que buscas no existe.</p>
+    <div className="flex flex-col w-screen h-screen items-center justify-center p-4 text-center">
+      <h1 className="text-3xl font-bold">404 - Page not Found</h1>
+      <p>Sorry, the page you're looking for doesn't exist!</p>
     </div>
   )
 }
