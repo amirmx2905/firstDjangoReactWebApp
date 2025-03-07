@@ -16,10 +16,6 @@ class noteListCreate(generics.ListCreateAPIView):
     
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
-        if serializer.is_valid():
-            serializer.save(author=self.request.user)
-        else:
-            print(serializer.errors)
 
 class noteDelete(generics.DestroyAPIView):
     serializer_class = NoteSerializer
